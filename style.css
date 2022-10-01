@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Inter',sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.drop__down__form {
+    position: absolute;
+    padding: 3rem;
+    width: 100%;
+    max-width: 600px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
+
+    backdrop-filter: blur(20px) saturate(80%);
+    -webkit-backdrop-filter: blur(20px) saturate(80%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: all 1s ease-in-out;
+}
+
+.drop__down__show {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.drop__down__close {
+    top: -50%;
+    left: -50%;
+    translate: -50% -50%;
+}
+
+#close__form {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: transparent;
+}
+
+#close__form ion-icon {
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.input_element {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #ffffff;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.258);
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+input[type="button"] {
+    margin-top: .5rem;
+    background: crimson;
+}
+
+
+.container
+{
+    width: 70%;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 10px;
+}
+
+.head
+{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.head .title
+{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Inter',sans-serif;
+}
+
+.head #add
+{
+    padding: 10px 20px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    background: #2ea44f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.todo
+{
+    margin: .2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.4rem 0rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.text__content
+{
+    font-family: 'Inter',sans-serif;
+    max-width: 70%;
+}
+
+.todo__title
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+.todo__desc
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #9ca3af;
+}
+
+.btn__group
+{
+    display: flex;
+    gap: .5rem;
+}
+
+.edit
+{
+    padding: 10px 20px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    background: #2ea44f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.delete
+{
+    padding: 10px 20px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    background: #e01a1a;
+    color: #fff;
+    border-radius: 5px;
+}
