@@ -5,6 +5,12 @@ let dropDownFormCloseBtn = document.querySelector('#close__form');
 todoAddBtn.addEventListener("click", () => {
     dropDownForm.classList.remove("drop__down__close");
     dropDownForm.classList.add("drop__down__show")
+
+    let title = document.getElementById('title');
+    let desc = document.getElementById('desc');
+    
+    title.value = "";
+    desc.value = "";
 })
 
 dropDownFormCloseBtn.addEventListener("click", () => {
@@ -26,7 +32,7 @@ let saveToDo = () => {
     dropDownForm.classList.add("drop__down__close");
     dropDownForm.classList.remove("drop__down__show");
 
-    displayData();
+    location.reload();
 
 }
 
@@ -141,7 +147,7 @@ deleteBtns.forEach((Element) => {
         if(userResponse)
         {
             localStorage.removeItem(key);
-            displayData();
+            location.reload();
         }
     })
 })
